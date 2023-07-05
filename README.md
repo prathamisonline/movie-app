@@ -1,4 +1,3 @@
-<img src="https://github.com/prathamisonline/movie-app/blob/main/src/Images/Project-Preview.png?raw=true"></img>
 
 
 <h1 align="center">Movie Search</h1>
