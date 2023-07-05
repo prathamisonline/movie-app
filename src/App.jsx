@@ -5,7 +5,9 @@ import SearchMovie from "./Component/SearchMovie";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <h1 className="container">Movie Search</h1>
-    <SearchMovie />
+    <div className="app">
+      <h1 className="container">Movie Search</h1>
+      <SearchMovie />
+    </div>
   </React.StrictMode>
 );

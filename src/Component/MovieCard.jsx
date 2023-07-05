@@ -9,7 +9,7 @@ function MovieCard({ movie }) {
         src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`}
         alt={movie.title + " poster"}
       />
-      <div className="card--content">
+      <div>
         <h3 className="caard--title">{movie.title}</h3>
         <p>
           <small>REALSE DATA: {movie.release_date}</small>

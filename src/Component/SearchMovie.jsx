@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "../Style.css";
 import MovieCard from "./MovieCard.jsx";
@@ -14,12 +14,16 @@ function SearchMovie(props) {
     try {
       const res = await fetch(url);
       const data = await res.json();
-      // console.log(data.results);
+      console.log(data.results);
       setMovies(data.results);
     } catch (err) {
       console.log(err);
     }
   };
+
+  useEffect(() => {
+    searchMovies();
+  }, []);
 
   return (
     <>
@@ -40,11 +44,9 @@ function SearchMovie(props) {
         </button>
       </form>
       <div className="card-list">
-        {movies
-          .filter((movie) => movie.poster_path)
-          .map((movie) => (
-            <MovieCard movie={movie} key={movie.id} />
-          ))}
+        {movies.map((movie) => (
+          <MovieCard movie={movie} key={movie.id} />
+        ))}
       </div>
     </>
   );
