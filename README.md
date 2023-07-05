@@ -10,14 +10,4 @@
 </div>
 
 
-## Built with 
-
--React
-</br>
--MovieDB api
-</br>
--CSS
-
-## What I learned
-A nice and simple project to practice react state and Api.
 
